@@ -1,0 +1,39 @@
+#modal.closed {
+    display: none;
+}
+#modal.opened {
+    display: true;
+}
+#modal {
+	border: 1px solid black;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    margin-left: -200px;
+    border-radius: 15px;
+    text-align: center;
+    background-image:linear-gradient(white, grey);
+}
+ #modal h1 {
+ 	color: black;
+ }
+
+ #modal p {
+ 	color: black;
+}
+ #modal a {
+ 	text-decoration: none;
+ }
+
+ #coucou {
+ 	border: 1px solid red;
+ 	background-image:linear-gradient(white, grey);
+ }
+
+#close {
+	border: 1px solid black;
+	border-radius: 4px;
+	background: grey;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<title>modal</title>
+</head>
+<body>
+<main>Hey , coucou toi!  <a href="#" id="open">Clique ici !</a></main>
+
+<div id="modal" class="closed">
+    <h1>ah bah non rien</h1>
+    <p>Tu peux quitter cette box, elle est inutile</p>
+    <a href="https://www.youtube.com/watch?v=kxopViU98Xo">
+    	<div class="coucou">
+	    	<p>Toutefois tu peux toujours cliquer sur le bouton quitter</p>
+	    	<p>Tchuss !</p>
+		</div>
+    </a>
+    <button id="close"><a>Merci pour ton aide.</a>&times;</button>
+</div>
+
+<script type="text/javascript">$modal = document.getElementById("modal");
+$open = document.getElementById("open");
+$close = document.getElementById("close");
+
+$open.onclick = function () {
+    $modal.classList.remove("closed");
+    $modal.classList.add("opened");
+}
+
+$close.onclick = function () {
+    $modal.classList.remove("opened");
+    $modal.classList.add("closed");
+}
+</script>
+
+</body>
+</html>
